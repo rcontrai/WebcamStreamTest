@@ -86,7 +86,7 @@
       canvas.height = height;
       context.drawImage(video, 0, 0, width, height);
     
-      var data = canvas.toDataURL('image/jpeg');
+      var data = canvas.toDataURL('image/jpeg', 0.9);
       photo.setAttribute('src', data);
       console.log('Image:', data);
     } else {
