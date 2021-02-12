@@ -5,7 +5,7 @@
 
   var width = 320;    // We will scale the photo width to this
   var height = 0;     // This will be computed based on the input stream
-  var framerate = 2;
+  var framerate = 3;
 
   // |streaming| indicates whether or not we're currently streaming
   // video from the camera. Obviously, we start at false.
@@ -91,7 +91,7 @@
     
       var data = canvas.toDataURL('image/png', 0.9);
       photo.setAttribute('src', data);
-      console.log('Image:', data);
+      // console.log('Image:', data);
     } else {
       clearphoto();
     }
